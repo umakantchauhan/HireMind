@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${monaSans.className} antialiased`}
+        className={`${monaSans.className} antialiased pattern`}//so that the css and font design grts apply every where
       >
         {children}
       </body>

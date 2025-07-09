@@ -1,5 +1,13 @@
 import React from "react"
 import Image from "next/image";
+// import { useState, useEffect } from "react";
+// import { useRouter } from "next/navigation";
+
+import { cn } from "@/lib/utils";
+import { vapi } from "@/lib/vapi.sdk";
+import { interviewer } from "@/constants";
+import { createFeedback } from "@/lib/actions/general.action";
+
 
 enum CallStatus {
     INACTIVE = "INACTIVE",
@@ -11,6 +19,11 @@ enum CallStatus {
 const Agent = ({userName}:AgentProps) =>{
     const callStatus = CallStatus.FINISHED;
     const isSpeaking = true;
+    const messages = [
+        "What is your name?",
+        "My name is Umakant, nice to meet you!"
+    ]
+    const lastMessage = messages[messages.length-1];
     return (
         <>
         <div className="call-view">
@@ -28,6 +41,15 @@ const Agent = ({userName}:AgentProps) =>{
                 </div>
             </div>
         </div>
+        {messages.length>0 && (
+            <div className="transcript-border">
+                <div className="transcript">
+                    <p key={lastMessage} className={cn("transition-opacity duration-500 opacity-0","animate-fadeIn opacity-100")}>
+                        {lastMessage}
+                    </p>
+                </div>
+            </div>
+        )}
         <div className="w-full flex justify-center">
             {callStatus!="ACTIVE"?(<button className="relative btn-call">
                 <span className={cn("absolute animate-ping rounded-full opacity-75", callStatus!="CONNECTING" & "hidden")}>

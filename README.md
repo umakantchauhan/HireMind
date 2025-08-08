@@ -2,6 +2,17 @@
 # HireMind
 work on my final year project
 =======
+<img width="1709" height="985" alt="Screenshot 2025-08-08 at 6 53 43 AM" src="https://github.com/user-attachments/assets/22610c45-0178-4c5a-9fae-6f5b89a24d8e" />
+<img width="1709" height="981" alt="Screenshot 2025-08-08 at 6 55 35 AM" src="https://github.com/user-attachments/assets/d9fbb3b9-b047-4169-b56d-304aebba3cc0" />
+<img width="1710" height="980" alt="Screenshot 2025-08-08 at 6 56 16 AM" src="https://github.com/user-attachments/assets/415b43c0-f002-42e6-a7dd-d6a85fdb8a08" />
+<img width="1710" height="980" alt="Screenshot 2025-08-08 at 6 56 25 AM" src="https://github.com/user-attachments/assets/e450a675-99eb-46ea-9ba7-c776741da686" />
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

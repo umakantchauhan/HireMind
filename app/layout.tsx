@@ -11,9 +11,6 @@ export const metadata: Metadata = {
   title: "HireMind",
   description: "An ai powered platform for preparing interviews",
 };
-
-
-
 export default function RootLayout({
   children,
 }: Readonly<{

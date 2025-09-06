@@ -7,10 +7,14 @@ const monaSans = Mona_Sans({
   variable: "--font-mona-sans",
   subsets: ["latin"],
 });
+
+
 export const metadata: Metadata = {
   title: "HireMind",
   description: "An ai powered platform for preparing interviews",
 };
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
